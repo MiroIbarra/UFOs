@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Client in Chrome",
+            "sourceMaps": true,
+            "url": "http://localhost:120.0.0.1",
+            "webRoot": "${workspaceRoot}",
+            "userDataDir": "${workspaceRoot}/.vscode/chrome",
+            "sourceMapPathOverrides": {
+                "webpack:/./*": "${webRoot}/*",
+                "webpack:/src/*": "${webRoot}/src/*",
+                "webpack:/*": "*",
+                "webpack:/./~/*": "${webRoot}/node_modules/*",
+            }
+        }
+    ]
+}
