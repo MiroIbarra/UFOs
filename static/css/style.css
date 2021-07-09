@@ -2,8 +2,14 @@ body {
 
     color: #f7f7f7;      
   }
-    .jumbotron {
-        background-image: url("../images/nasa.jpg");
-        background-size: 100% 100%;
-        text-align: center;
-    }
+  
+.jumbotron {
+  background-image: url("../images/nasa.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.table-body > tr > td:hover {
+  background-color: rgb(95, 165, 142);
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='26' height='31' viewport='0 0 100 100' style='fill:black;font-size:16px;'><text y='50%'>🚀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
